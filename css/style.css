@@ -16,3 +16,105 @@ body{
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.list {
+    padding-top: 200px;
+}
+
+.list__cards {
+    display: flex;
+}
+
+.list__item {
+    width: 467px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    display: flex;
+}
+
+.list__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image {
+    position: relative;
+}
+
+.card__image::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: url(../img/reward_1.png) no-repeat center center;
+    background-color: #fff;    
+}
+
+.card__image_two-reward::after {
+    content: '';
+    position: absolute;
+    top: 56px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: url(../img/reward_2.png) no-repeat center center;
+    background-color: #fff;
+}
+
+.card__picture {
+    display: block;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 8px 0px 0px;
+    padding: 8px 16px;
+}
+
+.card__profile {
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    padding: 16px;
+    padding-bottom: 24px;
+    flex-grow: 1;
+}
+
+.card__link {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 114px;
+    color: #fff;
+    background-color: rgba(140, 50, 255, 1);
+    padding: 8px 16px;
+    margin: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
